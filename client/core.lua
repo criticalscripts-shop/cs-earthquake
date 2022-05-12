@@ -1,7 +1,6 @@
 local earthquaking = false
 
-RegisterNetEvent('cs-earthquake:perform')
-AddEventHandler('cs-earthquake:perform', function()
+RegisterNetEvent('cs-earthquake:perform', function()
     if (earthquaking) then
         return
     end

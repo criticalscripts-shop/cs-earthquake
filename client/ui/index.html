@@ -10,11 +10,12 @@
             const sound = document.getElementById('sound')
 
             window.addEventListener('message', event => {
-                if (event.data.type === 'play') {
-                    sound.currentTime = 0
-                    sound.volume = event.data.volume
-                    sound.play()
-                }
+                if (event.data.type !== 'play')
+                    return
+
+                sound.currentTime = 0
+                sound.volume = event.data.volume
+                sound.play()
             })
         </script>
     </body>
