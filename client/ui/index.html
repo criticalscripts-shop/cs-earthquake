@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>cs-earthquake</title>
+    </head>
+    <body>
+        <audio src="sounds/earthquake.mp3" preload="auto" autostart="0" id="sound"></audio>
+
+        <script>
+            const sound = document.getElementById('sound')
+
+            window.addEventListener('message', event => {
+                if (event.data.type === 'play') {
+                    sound.currentTime = 0
+                    sound.volume = event.data.volume
+                    sound.play()
+                }
+            })
+        </script>
+    </body>
+</html>
