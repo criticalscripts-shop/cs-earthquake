@@ -7,7 +7,7 @@ if (config.updatesCheck) then
 
             if (data) then
                 if (data.version ~= version) then
-                    print('[criticalscripts.shop] Resource "cs-earthquake" is outdated, please download the latest version through our GitHub (https://github.com/criticalscripts-shop/cs-earthquake).')
+                    print('[criticalscripts.shop] Resource "cs-earthquake" is outdated, please download the latest version from our GitHub (https://github.com/criticalscripts-shop/cs-earthquake).')
                 else
                     print('[criticalscripts.shop] Resource "cs-earthquake" is up to date.')
                 end
