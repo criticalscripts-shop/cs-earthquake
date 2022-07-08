@@ -1,6 +1,7 @@
 -- The values have been fine-tuned to match the sound effect but feel free to fiddle with them.
 
 config = {
+    ['updatesCheck'] = true,
     ['effect'] = 'SKY_DIVING_SHAKE',
     ['soundEffectVolume'] = 0.25,
     ['buildUpMs'] = 5000,
